@@ -1,0 +1,109 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; 
+    padding: 15px 20px; 
+    position: relative; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.logo-link img {
+    height: 60px; 
+    margin-right: 20px; 
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1; 
+    justify-content: flex-end; 
+}
+
+ul li {
+    position: relative;
+    margin: 0 20px; 
+}
+
+ul li a {
+    text-decoration: none;
+    color: #242222; 
+    font-size: 18px; 
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.1); 
+    color: #007BFF; 
+}
+
+/* Estilos para el menú desplegable */
+ul li .submenu {
+    display: none; 
+    position: absolute;
+    background-color: white; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+    padding: 10px 0; 
+}
+
+ul li:hover .submenu {
+    display: block; 
+}
+
+.submenu li {
+    margin: 0; 
+}
+
+.submenu li a {
+    padding: 10px 20px; 
+}
+
+/* Menú móvil */
+.menu-toggle {
+    display: none; 
+    cursor: pointer; 
+    font-size: 24px; 
+    background: none;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul {
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        position: absolute; 
+        top: 60px; 
+        left: 0;
+        background-color: white; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        padding: 0; 
+    }
+
+    ul.active {
+        display: flex; 
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+
+    ul li {
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    ul li a {
+        font-size: 16px; 
+    }
+}

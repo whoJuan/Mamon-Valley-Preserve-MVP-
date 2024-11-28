@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para el encabezado */
+.hero {
+    background-image: url('/images/fondo.jpg'); 
+    height: 60vh;
+    background-size: cover;
+    color: rgb(5, 1, 1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    color: #333;
+}
+
+.info h2 {
+    margin-top: 0;
+}
+
+.info img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Sección de video */
+.video-section {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.video-section h2 {
+    margin-top: 0;
+}
+
+#footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .info, .video-section {
+        margin: 10px;
+        padding: 15px;
+    }
+}
