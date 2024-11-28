@@ -38,18 +38,10 @@ p {
 ul {
     list-style-type: none; 
     padding: 0; 
-    color: #fff;
 }
 
 li {
     margin: 5px 0;
-}
-
-.social-icon {
-    width: 24px;
-    height: auto; 
-    margin-left: 10px; 
-    filter: brightness(0) invert(1); 
 }
 
 a {
@@ -59,6 +51,28 @@ a {
     align-items: center; 
 }
 
-a:hover {
+/* Enlaces de texto */
+.get-involved a {
+    color: #ffffff; 
+}
+
+.get-involved a:hover {
     text-decoration: underline; 
+}
+
+.get-updated a {
+    color: #ffffff; 
+    display: inline-flex; 
+    align-items: center; 
+}
+
+.get-updated a:hover {
+    text-decoration: underline; 
+}
+
+.social-icon {
+    width: 24px; 
+    height: auto; 
+    margin-left: 10px; 
+    filter: brightness(0) invert(1); 
 }
