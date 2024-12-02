@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: #ffffff;
     background-color: #222;
 }
 
@@ -14,30 +14,43 @@ header.hero {
     padding: 100px 20px;
 }
 
-.hero-content {
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 30px;
-    border-radius: 10px;
-}
-
 .hero h1 {
-    font-size: 3em;
+    font-size: 3.5em; 
     margin: 0;
 }
 
 .hero p {
     font-size: 1.2em;
     color: #ffffff;
+    margin: 20px 0; 
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; 
 }
 
 .hero button {
-    margin: 10px auto; /* Cambiado para centrar el botón */
-    padding: 10px 20px;
-    background-color: #FFA500;
+    margin: 10px auto; 
+    padding: 15px 20px; 
+    background-color: #28a745; 
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; 
     cursor: pointer;
-    display: block; /* Asegura que el botón sea un bloque para centrarlo */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-size: 1.1em; 
+    color: #98f700; 
+    transition: background-color 0.3s; 
+    width: 150px; 
+    height: 50px; 
+}
+
+.hero button:hover {
+    background-color: #04d431; 
 }
 
 .investment {
@@ -92,7 +105,31 @@ footer {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+.sponsors {
+    text-align: center;
+    background-color: #0c0c0c; 
+    padding: 20px 0; 
+}
+
+.sponsors div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.sponsors img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: contain; 
+    margin: 10px; 
+}
+
 @media (max-width: 768px) {
+    .sponsors img {
+        width: 120px; 
+        height: 120px;
+    }
+
     header.hero {
         padding: 60px 10px; 
     }
@@ -128,7 +165,8 @@ footer {
     }
 
     .hero button {
-        padding: 8px 15px; 
+        width: 120px; 
+        height: 40px;
     }
 }
 
@@ -147,5 +185,10 @@ footer {
 
     .about-us p {
         font-size: 0.9em; 
+    }
+
+    .hero button {
+        width: 100px; 
+        height: 35px;
     }
 }
