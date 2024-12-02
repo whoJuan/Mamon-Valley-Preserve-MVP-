@@ -25,35 +25,34 @@ header.hero {
     margin: 20px 0; 
 }
 
-
 .button-container {
     display: flex;
     justify-content: center;
     gap: 30px; 
 }
 
-.hero button {
+.hero button, .biodiversity .button {
     margin: 10px auto; 
     padding: 15px 20px; 
-    background-color: #28a745; 
+    background-color: #9eeb22; 
     border: none;
-    border-radius: 5px; 
+    border-radius: 25px; /* Botón más redondeado */
     cursor: pointer;
     display: flex; 
     align-items: center; 
     justify-content: center; 
     font-size: 1.1em; 
-    color: #98f700; 
+    color: #000000; 
     transition: background-color 0.3s; 
     width: 150px; 
-    height: 50px; 
+    height: 50px;
 }
 
-.hero button:hover {
+.hero button:hover, .biodiversity .button:hover {
     background-color: #04d431; 
 }
 
-.investment {
+.investment, .biodiversity {
     background-color: #ffffff;
     text-align: center;
     padding: 50px;
@@ -67,13 +66,13 @@ header.hero {
     color: #050000; 
 }
 
-.about-us h2 {
+.about-us h2{
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #050000;
+    color: #070000;
 }
 
-.about-us p {
+.about-us p, .biodiversity p {
     font-size: 1.2em;
     margin-bottom: 40px;
 }
@@ -124,6 +123,79 @@ footer {
     margin: 10px; 
 }
 
+.biodiversity {
+    display: flex;
+    padding: 50px;
+    color: #ffffff;
+    flex-wrap: wrap; 
+    background-color: #000;
+}
+
+.biodiversity-text {
+    flex: 1; 
+    padding-right: 20px;
+    min-width: 300px; 
+}
+
+.biodiversity-image {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px; 
+}
+
+.biodiversity-image img {
+    width: 50%;
+    height: auto;
+}
+
+.biodiversity h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.biodiversity p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.research {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    color: #000;
+}
+
+.research h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.research p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.research-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.research-images img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .research-images img {
+        width: 200px; 
+    }
+}
+
 @media (max-width: 768px) {
     .sponsors img {
         width: 120px; 
@@ -142,15 +214,15 @@ footer {
         font-size: 1em; 
     }
 
-    .about-us {
+    .about-us, .biodiversity {
         padding: 30px; 
     }
 
-    .about-us h2 {
+    .about-us h2, .biodiversity h2 {
         font-size: 2em; 
     }
 
-    .about-us p {
+    .about-us p, .biodiversity p {
         font-size: 1em; 
     }
 
@@ -164,9 +236,32 @@ footer {
         margin-bottom: 20px; 
     }
 
-    .hero button {
+    .hero button, .biodiversity .button {
         width: 120px; 
         height: 40px;
+    }
+
+    .biodiversity {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .biodiversity-text {
+        padding-right: 0;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .biodiversity-image {
+        margin-top: 20px;
+    }
+
+    .biodiversity-image img {
+        width: 80%;
+    }
+
+    .biodiversity .button {
+        width: 100%
     }
 }
 
@@ -179,15 +274,15 @@ footer {
         font-size: 0.9em; 
     }
 
-    .about-us h2 {
+    .about-us h2, .biodiversity h2 {
         font-size: 1.8em; 
     }
 
-    .about-us p {
+    .about-us p, .biodiversity p {
         font-size: 0.9em; 
     }
 
-    .hero button {
+    .hero button, .biodiversity .button {
         width: 100px; 
         height: 35px;
     }

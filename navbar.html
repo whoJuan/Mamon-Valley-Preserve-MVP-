@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navbar_footer/navbar.css">
-    <title>Mi Navegación</title>
+    <script src="hamburguer.js" defer></script>
 </head>
 <body>
     <nav>
         <div class="logo-link">
             <a href="index.html"><img src="/images/logo.PNG" alt="Logo"></a>
         </div>
+        <div class="hamburger" id="hamburger">
+            <img src="/navbar_footer/icon/MdiLightMenu.svg" alt="Menú" width="30" height="30" />
+        </div>
+
+        <img id="close-navbar" src="/navbar_footer/icon/x.svg" alt="Cerrar" style="display: none; width: 30px; height: 30px; cursor: pointer;" />
+
         <ul id="navbar">
             <li>
                 <a href="#" class="dropdown">The Preserve</a>
@@ -62,6 +68,5 @@
             </li>
         </ul>
     </nav>
-    <script src="hamburguer.js"></script>
 </body>
 </html>

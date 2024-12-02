@@ -2,14 +2,13 @@ nav {
     display: flex;
     align-items: center;
     background-color: #ffffff; 
-    padding: 15px 20px; 
+    padding: 10px 20px;
     position: relative; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
 .logo-link img {
-    height: 60px; 
-    margin-right: 20px; 
+    height: 90px;
 }
 
 ul {
@@ -40,7 +39,6 @@ ul li a:hover {
     color: #007BFF; 
 }
 
-/* Estilos para el menú desplegable */
 ul li .submenu {
     display: none; 
     position: absolute;
@@ -62,27 +60,37 @@ ul li:hover .submenu {
     padding: 10px 20px; 
 }
 
-/* Menú móvil */
-.menu-toggle {
+.hamburger {
     display: none; 
     cursor: pointer; 
-    font-size: 24px; 
-    background: none;
-    border: none;
+    margin-left: auto;
 }
 
+#close-navbar {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px; 
+}
+
+ul.active + #close-navbar {
+    display: block;
+}
+
+/* Estilos responsivos */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: column; 
         align-items: flex-start;
+        padding: 15px 20px; /* Espaciado adicional para móviles */
     }
 
     ul {
-        display: none; 
+        display: none;
         flex-direction: column; 
         width: 100%; 
         position: absolute; 
-        top: 60px; 
+        top: 60px; /* Ajuste para que se vea mejor el menú */
         left: 0;
         background-color: white; 
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
@@ -90,11 +98,11 @@ ul li:hover .submenu {
     }
 
     ul.active {
-        display: flex; 
+        display: flex;
     }
 
-    .menu-toggle {
-        display: block; 
+    .hamburger {
+        display: block;
     }
 
     ul li {
