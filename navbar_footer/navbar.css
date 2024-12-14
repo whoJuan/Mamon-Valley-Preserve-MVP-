@@ -1,14 +1,15 @@
 nav {
     display: flex;
     align-items: center;
-    background-color: #ffffff; 
-    padding: 10px 20px;
-    position: relative; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px; /* Reducir padding */
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo-link img {
-    height: 90px;
+    height: 60px;
 }
 
 ul {
@@ -16,85 +17,82 @@ ul {
     display: flex;
     margin: 0;
     padding: 0;
-    flex-grow: 1; 
-    justify-content: flex-end; 
+    flex-grow: 1;
+    justify-content: flex-end;
 }
 
 ul li {
     position: relative;
-    margin: 0 20px; 
+    margin: 0 15px;
 }
 
 ul li a {
     text-decoration: none;
-    color: #242222; 
-    font-size: 18px; 
-    padding: 10px 15px; 
-    border-radius: 4px; 
-    transition: background-color 0.3s, color 0.3s; 
+    color: #242222;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.1); 
-    color: #007BFF; 
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #007BFF;
 }
 
 ul li .submenu {
-    display: none; 
+    display: none;
     position: absolute;
-    background-color: white; 
+    background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000; 
-    padding: 10px 0; 
+    z-index: 1000;
+    padding: 10px 0;
 }
 
 ul li:hover .submenu {
-    display: block; 
-}
-
-.submenu li {
-    margin: 0; 
-}
-
-.submenu li a {
-    padding: 10px 20px; 
-}
-
-.hamburger {
-    display: none; 
-    cursor: pointer; 
-    margin-left: auto;
-}
-
-#close-navbar {
-    display: none;
-    cursor: pointer;
-    width: 30px;
-    height: 30px; 
-}
-
-ul.active + #close-navbar {
     display: block;
 }
 
-/* Estilos responsivos */
+.submenu li {
+    margin: 0;
+}
+
+.submenu li a {
+    padding: 10px 20px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+#close-navbar {
+    display: none; 
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column; 
-        align-items: flex-start;
-        padding: 15px 20px; /* Espaciado adicional para móviles */
+        padding: 15px 10px; 
     }
 
     ul {
         display: none;
-        flex-direction: column; 
-        width: 100%; 
-        position: absolute; 
-        top: 60px; /* Ajuste para que se vea mejor el menú */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
         left: 0;
-        background-color: white; 
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
-        padding: 0; 
+        background-color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 0;
     }
 
     ul.active {
@@ -106,12 +104,16 @@ ul.active + #close-navbar {
     }
 
     ul li {
-        margin: 10px 0; 
+        margin: 10px 0;
+    }
+
+    ul.active + #close-navbar {
+        display: block;
     }
 }
 
 @media (max-width: 480px) {
     ul li a {
-        font-size: 16px; 
+        font-size: 16px;
     }
 }

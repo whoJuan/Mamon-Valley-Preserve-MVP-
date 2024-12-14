@@ -31,6 +31,7 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+/* Sección de información */
 .info {
     padding: 20px;
     margin: 20px auto;
@@ -45,6 +46,7 @@ body {
 
 .info img {
     max-width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
@@ -59,6 +61,14 @@ body {
     margin-top: 0;
 }
 
+.video-section video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Footer */
 #footer {
     text-align: center;
     padding: 10px;
@@ -69,6 +79,7 @@ body {
     width: 100%;
 }
 
+/* Estilos de enlaces */
 a {
     color: #007BFF;
     text-decoration: none;
@@ -84,8 +95,54 @@ a:hover {
         font-size: 2em;
     }
 
+    .hero p {
+        font-size: 1.1em;
+    }
+
     .info, .video-section {
         margin: 10px;
         padding: 15px;
+    }
+
+    .info h2 {
+        font-size: 22px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+
+    .video-section h2 {
+        font-size: 22px;
+    }
+
+    .video-section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+
+    .info p {
+        font-size: 14px;
+    }
+
+    .video-section h2 {
+        font-size: 20px;
+    }
+
+    .video-section p {
+        font-size: 14px;
     }
 }

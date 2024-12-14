@@ -44,14 +44,7 @@ li {
     margin: 5px 0;
 }
 
-a {
-    color: #ffffff; 
-    text-decoration: none; 
-    display: flex; 
-    align-items: center; 
-}
 
-/* Enlaces de texto */
 .get-involved a {
     color: #ffffff; 
 }
