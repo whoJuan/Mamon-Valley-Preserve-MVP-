@@ -32,14 +32,14 @@ a {
     margin: 20px 0; 
 }
 
-
 .hero .button {
-    display: inline-block;
-    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px 20px; 
     background-color: #fcc861; 
     color: white;
-    text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     text-decoration: none;
     border-radius: 25px; 
@@ -53,9 +53,9 @@ a {
 
 .button-container {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     flex-wrap: wrap; 
-    gap: 20px; 
+    gap: 10px;
 }
 
 .investment, .biodiversity {
@@ -214,9 +214,6 @@ footer {
         max-width: 90%;
         margin: 0 auto;
     }
-}
-
-@media (max-width: 768px) {
 
     .sponsors img {
         width: 120px; 
@@ -306,5 +303,9 @@ footer {
     .hero .button, .biodiversity .button {
         width: 100px; 
         height: 35px;
+    }
+
+    .button-container {
+        gap: 10px; 
     }
 }

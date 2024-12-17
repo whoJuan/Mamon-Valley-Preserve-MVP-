@@ -6,12 +6,12 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Estilos para el encabezado */
+
 .hero {
     background-image: url('/images/fondo.jpg'); 
     height: 60vh;
     background-size: cover;
-    color: rgb(5, 1, 1);
+    color: rgb(255, 255, 255);
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,7 @@ body {
 .hero p {
     font-size: 1.2em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    color: #ffff;
 }
 
 /* Sección de información */
