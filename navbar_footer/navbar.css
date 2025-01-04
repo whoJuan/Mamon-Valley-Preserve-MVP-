@@ -80,7 +80,7 @@ ul li:hover .submenu {
     cursor: pointer;
     font-size: 24px;
     margin: 0;
-    align-self: center; 
+    align-self: center;
 }
 
 #close-navbar {
@@ -90,7 +90,7 @@ ul li:hover .submenu {
     height: 30px;
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 15px;
 }
 
 @media (max-width: 768px) {
@@ -126,12 +126,17 @@ ul li:hover .submenu {
 
     .hamburger {
         display: block;
-        align-self: center; 
     }
 
-    ul.active + #close-navbar {
+    /* Mostrar el ícono de cerrar cuando el menú está activo */
+    ul.active ~ #close-navbar {
         display: block;
     }
+
+    /* Ocultar el ícono de hamburguesa cuando el menú está activo */
+    ul.active ~ .hamburger {
+        display: none;
+    }  
 }
 
 @media (max-width: 480px) {
